@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaFlow — Contacto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NovaFlow home"><svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect rx="6" width="24" height="24" fill="#FE2C55"></rect></svg><span class="brand-name">NovaFlow</span></a>
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="publications.html">Publicaciones</a></li>
+          <li><a href="topics.html">Temas</a></li>
+          <li><a href="news.html">Noticias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Contacto</h1>
+      <p class="muted">Envíanos tus comentarios — formulario accesible y validado en cliente.</p>
+    </header>
+
+    <section class="contact-form">
+      <form id="contact" novalidate>
+        <div class="form-row">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+          <span class="form-error" id="err-name" aria-live="polite"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" inputmode="email" required aria-required="true" />
+          <span class="form-error" id="err-email" aria-live="polite"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+          <span class="form-error" id="err-message" aria-live="polite"></span>
+        </div>
+
+        <div class="form-row form-actions">
+          <button class="btn primary" type="submit">Enviar</button>
+          <button class="btn ghost" type="reset">Limpiar</button>
+        </div>
+
+        <div id="form-status" aria-live="polite" class="form-status"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="muted small">© <span id="year6"></span> NovaFlow</p></div>
+      <div><a href="index.html">Inicio</a></div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

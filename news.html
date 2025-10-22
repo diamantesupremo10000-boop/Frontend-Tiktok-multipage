@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaFlow — Noticias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NovaFlow home"><svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect rx="6" width="24" height="24" fill="#FE2C55"></rect></svg><span class="brand-name">NovaFlow</span></a>
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="publications.html">Publicaciones</a></li>
+          <li><a href="topics.html">Temas</a></li>
+          <li><a href="news.html" class="active">Noticias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Noticias</h1>
+      <p class="muted">Lista cronológica — artículos simulados para diseño.</p>
+    </header>
+
+    <section class="news-list" aria-labelledby="news-list-title">
+      <h2 id="news-list-title" class="sr-only">Lista de noticias</h2>
+      <article class="news-item" aria-labelledby="n1-title">
+        <time datetime="2025-10-15" class="news-date">Oct 15, 2025</time>
+        <h3 id="n1-title">Ejemplo de noticia 1</h3>
+        <p class="muted">Breve resumen informativo. Diseño pensado para lectura rápida.</p>
+        <a href="#" class="btn small">Leer más</a>
+      </article>
+
+      <article class="news-item" aria-labelledby="n2-title">
+        <time datetime="2025-09-30" class="news-date">Sep 30, 2025</time>
+        <h3 id="n2-title">Ejemplo de noticia 2</h3>
+        <p class="muted">Resumen con contexto breve para navegación rápida.</p>
+        <a href="#" class="btn small">Leer más</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="muted small">© <span id="year4"></span> NovaFlow</p></div>
+      <div><a href="index.html">Inicio</a></div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

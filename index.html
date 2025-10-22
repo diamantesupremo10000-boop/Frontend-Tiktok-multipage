@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaFlow — Home</title>
+  <meta name="description" content="Plantilla moderna y minimalista inspirada en la estructura de plataformas de contenido. Sitio de ejemplo." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Preconnect local fonts (if hosting) - otherwise system fonts -->
+</head>
+<body>
+  <!-- Fixed header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NovaFlow home">
+        <!-- simple SVG logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect rx="6" width="24" height="24" fill="#FE2C55"></rect>
+          <path d="M6 8h12v2H6z" fill="#fff" opacity="0.95"></path>
+        </svg>
+        <span class="brand-name">NovaFlow</span>
+      </a>
+
+      <form class="search" role="search" aria-label="Buscar en el sitio" onsubmit="return false;">
+        <label for="site-search" class="sr-only">Buscar</label>
+        <input id="site-search" type="search" placeholder="Buscar temas, publicaciones..." />
+        <button aria-label="Buscar" class="btn-icon" type="submit">🔍</button>
+      </form>
+
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="main-menu" class="nav-toggle">☰</button>
+        <ul id="main-menu" class="nav-list">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="publications.html">Publicaciones</a></li>
+          <li><a href="topics.html">Temas</a></li>
+          <li><a href="news.html">Noticias</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title">Contenido moderno. Impacto claro.</h1>
+          <p class="lead">Plantilla ligera para proyectos que necesitan una experiencia centrada en vídeo y microcontenidos, con accesibilidad priorizada.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="publications.html">Explorar publicaciones</a>
+            <a class="btn ghost" href="topics.html">Ver temas</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- decorative gradient + micro-card mock -->
+          <div class="card-mock" role="img" aria-label="Mock preview visual"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights / Cards -->
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <h2 id="highlights-title" class="section-title">Secciones destacadas</h2>
+        <ul class="card-grid" role="list">
+          <li class="card">
+            <div class="card-media" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Publicaciones</h3>
+              <p class="muted">Colecciones de documentos y recursos listos para descargar.</p>
+              <a class="btn small" href="publications.html">Ver</a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-media" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Temas</h3>
+              <p class="muted">Navega por temas populares y categorías.</p>
+              <a class="btn small" href="topics.html">Explorar</a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-media" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Noticias</h3>
+              <p class="muted">Actualizaciones cronológicas y artículos breves.</p>
+              <a class="btn small" href="news.html">Leer</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Carousel / Resources -->
+    <section class="resources" aria-labelledby="resources-title">
+      <div class="container">
+        <h2 id="resources-title" class="section-title">Recursos recientes</h2>
+        <div class="carousel" data-carousel>
+          <button class="carousel-prev" aria-label="Anterior">‹</button>
+          <ul class="carousel-track" role="list">
+            <li class="carousel-item" tabindex="0">
+              <article class="resource">
+                <div class="thumb" aria-hidden="true"></div>
+                <h3>Ejemplo de título A</h3>
+                <p class="muted small">Resumen breve del recurso o publicación.</p>
+              </article>
+            </li>
+            <li class="carousel-item" tabindex="0">
+              <article class="resource">
+                <div class="thumb" aria-hidden="true"></div>
+                <h3>Ejemplo de título B</h3>
+                <p class="muted small">Resumen breve del recurso o publicación.</p>
+              </article>
+            </li>
+            <li class="carousel-item" tabindex="0">
+              <article class="resource">
+                <div class="thumb" aria-hidden="true"></div>
+                <h3>Ejemplo de título C</h3>
+                <p class="muted small">Resumen breve del recurso o publicación.</p>
+              </article>
+            </li>
+          </ul>
+          <button class="carousel-next" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-foot"><strong>NovaFlow</strong> — Minimal template</p>
+        <p class="muted small">© <span id="year"></span> NovaFlow. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Accesibilidad</a>
+        <select aria-label="Seleccionar idioma" id="lang-select">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

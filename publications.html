@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaFlow — Publicaciones</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Reuse header (duplicated for static site) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NovaFlow home">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><rect rx="6" width="24" height="24" fill="#FE2C55"></rect></svg>
+        <span class="brand-name">NovaFlow</span>
+      </a>
+      <form class="search" role="search" aria-label="Buscar en publicaciones" onsubmit="return false;">
+        <label class="sr-only" for="pub-search">Buscar publicaciones</label>
+        <input id="pub-search" type="search" placeholder="Buscar publicaciones..." />
+        <button aria-label="Buscar" class="btn-icon" type="submit">🔍</button>
+      </form>
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <button id="nav-toggle-2" aria-expanded="false" aria-controls="main-menu-2" class="nav-toggle">☰</button>
+        <ul id="main-menu-2" class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="publications.html" class="active">Publicaciones</a></li>
+          <li><a href="topics.html">Temas</a></li>
+          <li><a href="news.html">Noticias</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Publicaciones</li>
+      </ol>
+    </nav>
+
+    <header class="page-header">
+      <h1>Publicaciones</h1>
+      <p class="muted">Galería de recursos filtrables — diseño pensado para legibilidad y accesibilidad.</p>
+    </header>
+
+    <section class="filters" aria-labelledby="filters-title">
+      <h2 id="filters-title" class="sr-only">Filtros</h2>
+      <div class="filter-controls">
+        <label for="filter-type">Tipo</label>
+        <select id="filter-type" aria-controls="pub-list">
+          <option value="all">Todos</option>
+          <option value="pdf">PDF</option>
+          <option value="audio">Audio</option>
+          <option value="video">Video</option>
+        </select>
+
+        <label for="filter-topic">Tema</label>
+        <select id="filter-topic" aria-controls="pub-list">
+          <option value="all">Todos</option>
+          <option value="design">Diseño</option>
+          <option value="strategy">Estrategia</option>
+          <option value="tech">Tecnología</option>
+        </select>
+
+        <label for="filter-search" class="sr-only">Buscar publicaciones</label>
+        <input id="filter-search" type="search" placeholder="Buscar por título..." />
+      </div>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="section-title">Resultados</h2>
+      <ul id="pub-list" class="pub-grid" role="list">
+        <!-- Example card items - simulated downloads (no real files) -->
+        <li class="pub-card" data-type="pdf" data-topic="design">
+          <div class="pub-thumb" aria-hidden="true"></div>
+          <div class="pub-body">
+            <h3>Ejemplo de publicación 1</h3>
+            <p class="muted small">Documento breve sobre prácticas de diseño.</p>
+            <div class="pub-actions">
+              <button class="btn small" aria-label="Ver detalles">Detalles</button>
+              <button class="btn small ghost" aria-label="Descargar" disabled>Descargar</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub-card" data-type="video" data-topic="tech">
+          <div class="pub-thumb" aria-hidden="true"></div>
+          <div class="pub-body">
+            <h3>Ejemplo de publicación 2</h3>
+            <p class="muted small">Tutorial en vídeo sobre tecnologías modernas.</p>
+            <div class="pub-actions">
+              <button class="btn small" aria-label="Ver detalles">Detalles</button>
+              <button class="btn small ghost" aria-label="Descargar">Descargar</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub-card" data-type="audio" data-topic="strategy">
+          <div class="pub-thumb" aria-hidden="true"></div>
+          <div class="pub-body">
+            <h3>Ejemplo de publicación 3</h3>
+            <p class="muted small">Podcast de estrategia rápida.</p>
+            <div class="pub-actions">
+              <button class="btn small" aria-label="Ver detalles">Detalles</button>
+              <button class="btn small ghost" aria-label="Descargar">Descargar</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- add more as needed -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p class="muted small">© <span id="year2"></span> NovaFlow</p></div>
+      <div><a href="index.html">Volver al inicio</a></div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
